@@ -32,7 +32,7 @@ Installation
 4. Set up environment variables:
    - Create a `.env` file and add your Gemini API key:
      
-     SECRET_KEYS=your_api_key_here
+     GEMINI_API_KEYS=your_api_key_here
      
 5. Run the Django server:
    bash
