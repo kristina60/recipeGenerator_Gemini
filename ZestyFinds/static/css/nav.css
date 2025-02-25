@@ -1,0 +1,18 @@
+.nav-item {
+    list-style-type: none; /* Removes bullet points */
+  }
+  
+  .nav-link {
+    border: none;          /* Removes border */
+    background-color: transparent; /* Makes the background transparent */
+    color: #007bff;        /* Customize the link color */
+    padding: 10px 20px;    /* Add padding like a button */
+    font-weight: bold;     /* Optional, makes the text bold */
+  }
+  
+  .nav-link:hover {
+    color: #0056b3;        /* Darker color on hover */
+    background-color: #f8f9fa; /* Background color on hover */
+    cursor: pointer;      /* Makes it look like a clickable button */
+  }
+  

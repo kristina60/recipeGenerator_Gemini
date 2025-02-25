@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% load static %}{% block content %}
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Recipes</title>
+</head>
+<body>
+    <h1>Recipes You Can Make</h1>
+    <ul>
+        {% for food in food_list %}
+            <li>{{ food }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_ingredients' %}">Go Back</a>
+</body>
+</html> -->
+<div class="container d-flex justify-content-center align-items-center" style="height: 100%; width: 100%; margin-bottom: 50vh; margin-top: 3%">
+    <div class="p-4 border pic" style="background-color: #f5e1ea; height: 100%; width: 90%" >
+    <h1>Recipe List</h1>
+    <ul class="list-group list-group-flush">
+        {% for recipe in recipe_list %}
+            <li class="list-group-item">
+                <a href="{% url 'recipe_instructions' recipe %}">{{ recipe }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_ingredients' %}">Go Back</a>
+    </div></div>
+{% endblock content %}

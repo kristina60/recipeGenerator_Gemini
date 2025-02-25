@@ -1,0 +1,50 @@
+{% extends "base.html" %} {% load static %}{% block content %}
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Recipes</title>
+</head>
+<body>
+    <h1>Enter Ingredients and Time</h1>
+    <form method="post" action="{% url 'add_ingredients' %}">
+        {% csrf_token %}
+        <label for="ingredients">Ingredients (comma-separated):</label><br>
+        <input type="text" id="ingredients" name="ingredients" required><br><br>
+
+        <label for="time">Time (in minutes):</label><br>
+        <input type="number" id="time" name="time" required><br><br>
+
+        <button type="submit">Generate Recipes</button>
+    </form>
+</body>
+</html> -->
+<!-- <div class="container">
+    {% include "partials/_messages.html" %}</div> -->
+
+<div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
+        <div class="p-4 border pic" style="background-color: #f5e1ea;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span><h1>Enter Ingredients and Time</h1>
+                    <form method="post">
+                        {% csrf_token %}
+                        <label for="ingredients">Ingredients (separated by commas):</label>
+                        <input type="text" id="ingredients" name="ingredients" required><br><br>
+                        <label for="time">Time Limit (in minutes):</label>
+                        <input type="number" id="time" name="time" required><br><br>
+                        <label for="serving">Number of servings</label>
+                        <input type="number" id="serving" name="serving" required><br><br>
+                        <label for="cookingMethod">Choose your cooking method:</label>
+                        <select id="cookingMethod" name="cookingMethod">
+                        <option value="microwave">Microwave</option>
+                        <option value="gasStove">Gas Stove</option>
+                        </select><br><br>
+                        <button type="submit">Find Recipes</button>
+                    </form>
+                </span>
+            <span> <div style="text-align: center;">
+           <img src="{% static 'img/girl.gif' %}" alt="chef" height="150vh" width="150vh"></div>
+           </span>
+           </div>
+        </div>
+      </div>
+{% endblock content %}

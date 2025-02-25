@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+    <h1>Saved Recipes</h1>
+    <ul>
+        {% for recipe in saved_recipes %}
+        <li>
+            <strong>{{ recipe.name }}</strong>
+            <p>{{ recipe.instructions }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_ingredients' %}">Find More Recipes</a>
+{% endblock content %}

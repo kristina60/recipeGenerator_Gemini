@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="p-4 border pic" style="background-color: #f5e1ea;">
+        <h1>{{ recipe_name }}</h1>
+        <p style="white-space: pre-line;">{{ instructions }}</p> 
+        <form method="post" action="">
+            {% csrf_token %}
+            <input type="hidden" name="recipe_name" value="{{ recipe_name }}">
+            <textarea name="instructions" hidden>{{ instructions }}</textarea>
+        </form>
+        <a href="{% url 'add_ingredients' %}">Go Back</a>
+    </div>
+</div>
+{% endblock content %}
