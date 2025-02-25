@@ -1,25 +1,4 @@
 {% extends "base.html" %} {% load static %}{% block content %}
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>Generate Recipes</title>
-</head>
-<body>
-    <h1>Enter Ingredients and Time</h1>
-    <form method="post" action="{% url 'add_ingredients' %}">
-        {% csrf_token %}
-        <label for="ingredients">Ingredients (comma-separated):</label><br>
-        <input type="text" id="ingredients" name="ingredients" required><br><br>
-
-        <label for="time">Time (in minutes):</label><br>
-        <input type="number" id="time" name="time" required><br><br>
-
-        <button type="submit">Generate Recipes</button>
-    </form>
-</body>
-</html> -->
-<!-- <div class="container">
-    {% include "partials/_messages.html" %}</div> -->
 
 <div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
         <div class="p-4 border pic" style="background-color: #f5e1ea;">

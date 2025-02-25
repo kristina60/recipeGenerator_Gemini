@@ -48,7 +48,7 @@ Usage
 Technologies Used
 - Django – Web framework
 - Gemini API – AI-powered recipe generation
-- HTML, CSS, JavaScript – Frontend
+- HTML, CSS, bootstrap– Frontend
 - SQLite – Database
 
 License
